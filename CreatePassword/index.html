@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator | صفحه ساخت رمز </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="generatorWrapper">
+        <h2>رمز ساز</h2>
+        <form>
+            <input type="text" id="result">
+            <button type="button" class="btn-copy">کپی</button>
+            <i class="far fa-copy"></i>
+            <span class="success-msg">
+                رمز در کلیپ بورد کپی شد
+            </span>
+        </form>
+        <div class="selection-section">
+            <div class="selection">
+                <label>طول رمز خود ر وارد کنید </label>
+                <input type="number" id="charachterLength" name="charachterLength" min="6" max="20" value="20">
+            </div>
+            <div class="selection">
+                <label>از حروف کوچک استفاده شود </label>
+                <input type="checkbox" id="lowercaseCharachter" name="lowercaseCharachter" checked>
+
+                <div class="selection">
+                    <label>از حروف بزرگ استفاده شود </label>
+                    <input type="checkbox" id="uppercaseCharachter" name="uppercaseCharachter" checked>
+                </div>
+                <div class="selection">
+                    <label>از اعداد استفاده شود </label>
+                    <input type="checkbox" id="numberCharachter" name="numberCharachter" checked>
+                </div>
+                <div class="selection">
+                    <label>از علامت  ها استفاده شود </label>
+                    <input type="checkbox" id="symbolCharachter" name="symbolCharachter" checked>
+                </div>
+            </div>
+<button class="btn-generate" type="button">ساخت رمز </button>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>تاس بازی </title>
+</head>
+
+<body>
+    <div class="container">
+        <section class="player player--0 player--active">
+            <div class="tscore">
+                <h2 class="name" id="name--0">
+                    جمع امتیاز <br>
+                    <span class="pl">بازیکن 1</span>
+                </h2>
+                <p class="score" id="score--0">0</p>
+            </div>
+
+            <div class="current">
+                <p class="current-label"> امتیاز های در جریان </p>
+
+                <p class="current-score" id="current--0">0</p>
+
+            </div>
+        </section>
+
+        <section class="player player--1">
+            <div class="tscore">
+                <h2 class="name" id="name--1">
+                    جمع امتیاز<br>
+                    <span class="pl">بازیکن 2</span>
+                </h2>
+                <p class="score" id="score--1">0</p>
+            </div>
+
+            <div class="current">
+                <p class="current-label"> امتیاز های در جریان </p>
+
+                <p class="current-score" id="current--1">0</p>
+
+            </div>
+        </section>
+
+        <img src="images/Dices/dice-1.png" alt="Playing dice" class="dice hidden" />
+        <button class="btn btn--new">شروع بازی</button>
+        <button class="btn btn--roll">تاس را بچرخان</button>
+        <button class="btn btn--hold">توقف</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

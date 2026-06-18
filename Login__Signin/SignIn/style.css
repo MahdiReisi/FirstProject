@@ -1,0 +1,357 @@
+/* --- استایل‌های موجود شما --- */
+@font-face {
+  font-family: 'vazir';
+  src: url('fonts/vazir-font-v16.1.0/Vazir-Light.woff2')format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-size: large;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  background-color: #5c6164;
+  /* پس‌زمینه خاکستری تیره */
+}
+
+.h1 {
+  margin-top: 30px;
+  font-family: 'vazir';
+  font-weight: 600;
+  font-size: 60px;
+  color: #e1e1e1;
+  /* سفید مایل به خاکستری */
+}
+
+.header {
+  margin-bottom: 5rem;
+  /* کمی کمتر کردم تا به کانتینر بچسبد */
+  margin-top: 5px;
+  font-family: 'vazir';
+  font-size: 45px;
+  color: #e1e1e1;
+  /* سفید مایل به خاکستری */
+}
+
+.container {
+  font-family: 'vazir';
+  height: auto;
+  /* ارتفاع را خودکار تنظیم کن که جا برای فرم باشد */
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* محتوا را وسط چین کن */
+  padding: 30px;
+  /* کمی padding بیشتر */
+  background-image: linear-gradient(to right, #868F96, #596164);
+  /* گرادیانت خاکستری */
+  border-radius: 40px;
+  position: relative;
+  gap: 20px;
+  /* فاصله کمتر بین عناصر داخل کانتینر */
+  padding-bottom: 60px;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+  /* حاشیه سفید نازک */
+}
+
+.container::before {
+  font-family: 'vazir';
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border-radius: 43px;
+  /* کمی بزرگتر از border-radius اصلی */
+  background-image: linear-gradient(to right, #000000, #e1e1e1, #50585d);
+  /* گرادیانت متحرک */
+  background-size: 200% 200%;
+  z-index: -1;
+  animation: gradientAnimation 6s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 25%;
+  }
+
+  25% {
+    background-position: 25% 50%;
+  }
+
+  50% {
+    background-position: 50% 75%;
+  }
+
+  75% {
+    background-position: 75% 100%;
+  }
+
+  100% {
+    background-position: 0% 25%;
+  }
+}
+
+/* --- استایل‌های مربوط به فرم ثبت نام --- */
+
+.registration-form-container {
+  font-family: 'vazir';
+  display: flex;
+  flex-direction: column;
+  /* عناصر فرم به صورت ستونی چیده شوند */
+  align-items: center;
+  /* همه عناصر وسط چین */
+  width: 100%;
+  /* فرم عرض کامل کانتینر را بگیرد */
+  max-width: 750px;
+  /* حداکثر عرض فرم */
+  margin-top: 10px;
+  /* کمی فاصله از بالای کانتینر */
+}
+
+.form-row {
+  font-family: 'vazir';
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 100%;
+  /* هر ردیف عرض کامل را بگیرد */
+  flex-wrap: wrap;
+  /* برای واکنش‌گرایی */
+  gap: 20px;
+  /* فاصله بین فیلدها در ردیف */
+}
+
+.form-field {
+  font-family: 'vazir';
+  flex: 1;
+  /* هر فیلد نصف عرض ردیف را بگیرد */
+  min-width: 250px;
+  /* حداقل عرض برای هر فیلد */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* لیبل و اینپوت زیر هم */
+  align-items: flex-start;
+  /* آیتم‌ها به سمت چپ چیده شوند */
+}
+
+.form-field label {
+  font-family: 'vazir';
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  /* فونت پررنگ‌تر */
+  color: #e1e1e1;
+  /* رنگ سفید مایل به خاکستری */
+  font-family: 'vazir';
+  font-size: 1.1rem;
+}
+
+.form-field input[type="text"],
+.form-field input[type="tel"],
+.form-field input[type="email"],
+.form-field input[type="password"] {
+  font-family: 'vazir';
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #aaa;
+  /* حاشیه کمی تیره‌تر */
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.1);
+  /* پس‌زمینه شفاف */
+  color: #e1e1e1;
+  /* رنگ متن ورودی */
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.form-field input::placeholder {
+  font-family: 'vazir';
+  color: #ccc;
+  /* رنگ متن placeholder */
+}
+
+.form-field input:focus {
+  font-family: 'vazir';
+  border-color: #e1e1e1;
+  /* حاشیه روشن‌تر موقع فوکوس */
+  background-color: rgba(255, 255, 255, 0.2);
+  /* پس‌زمینه روشن‌تر */
+  outline: none;
+}
+
+/* استایل خاص برای input type=file */
+.form-field input[type="file"] {
+  font-family: 'vazir';
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px 15px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  color: #e1e1e1;
+  cursor: pointer;
+}
+
+.form-field input[type="file"]:focus {
+  font-family: 'vazir';
+  border-color: #e1e1e1;
+}
+
+/* برای فیلدهای خاص */
+.form-row.full-width .form-field {
+  font-family: 'vazir';
+  flex: 0 0 100%;
+  /* فیلد تمام عرض را بگیرد */
+  min-width: 100%;
+}
+
+/* استایل دکمه‌ها */
+.form-actions {
+  font-family: 'vazir';
+  margin-top: 15px;
+  /* فاصله از عناصر بالا */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* دکمه‌ها وسط چین */
+  gap: 20px;
+  /* فاصله بین دکمه‌ها */
+}
+
+.form-actions .button {
+  font-family: 'vazir';
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-family: 'vazir';
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border: none;
+  /* حذف حاشیه پیش‌فرض */
+}
+
+/* استایل دکمه "اتمام" */
+#finish-button {
+  font-family: 'vazir';
+  background-color: #45a049;
+  /* سبز تیره‌تر */
+  color: white;
+}
+
+#finish-button:hover {
+  font-family: 'vazir';
+  background-color: #367c39;
+  /* سبز خیلی تیره‌تر */
+  transform: translateY(-2px);
+}
+
+/* استایل دکمه "ساخت رمز" */
+#generate-password-button {
+  font-family: 'vazir';
+  background-color: #007bff;
+  /* آبی */
+  color: white;
+}
+
+#generate-password-button:hover {
+  font-family: 'vazir';
+  background-color: #0056b3;
+  /* آبی تیره‌تر */
+  transform: translateY(-2px);
+}
+
+#toggle {
+  position: absolute;
+  cursor: pointer;
+  left: 70px;
+  font-size: 26px;
+  line-height: 1;
+  user-select: none;
+}
+
+.status {
+  font-family: 'vazir';
+  font-size: 16px;
+  color: #1e272e;
+}
+
+.ckeckRepeat {
+  font-family: 'vazir';
+  font-size: 16px;
+  color: #1e272e;
+}
+
+/* تنظیمات برای عرض‌های کمتر (مثلاً موبایل) */
+@media (max-width: 920px) {
+
+  /* کمی تغییر دادم که با عرض کانتینر هماهنگ باشه */
+  .container {
+    width: 95%;
+    /* در موبایل عرض بیشتری بگیرد */
+    padding: 20px;
+  }
+
+  .registration-form-container {
+    max-width: 100%;
+  }
+
+  .form-row {
+    flex-direction: column;
+    /* ستونی */
+    gap: 15px;
+  }
+
+  .form-field {
+    min-width: unset;
+    /* حداقل عرض را بردار */
+    width: 100%;
+    /* فیلدها عرض کامل */
+  }
+
+  .form-actions {
+    flex-direction: column;
+    /* دکمه‌ها هم ستونی */
+    gap: 15px;
+  }
+
+  .form-actions .button {
+    width: 100%;
+    /* دکمه‌ها عرض کامل */
+  }
+}
+
+/* استایل برای placeholder label (اگر خواستی از مثال قبلی استفاده کنی) */
+/* برای استفاده از این استایل‌ها، باید در HTML label را بعد از input قرار دهی */
+/* و از کلاس full-width برای تک فیلدها (مثل آدرس) استفاده کنی */
+
+/*
+.form-field label {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    color: #ccc;
+    font-size: 1rem;
+    transition: all 0.25s ease;
+    pointer-events: none;
+    background: transparent; // اگر پس‌زمینه کانتینر تیره است
+}
+
+.form-field input:focus + label,
+.form-field input:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 12px;
+    font-size: 0.8rem;
+    color: #e1e1e1;
+    background: #5c6164; // رنگ پس‌زمینه body
+    padding: 0 5px;
+    z-index: 1; // برای اینکه روی بقیه چیزها بیاید
+}
+*/

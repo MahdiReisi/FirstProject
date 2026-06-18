@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | صفجه اصلی</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider-style.css">
+    <link rel="stylesheet" href="css/category-carousel-style.css">
+    <link rel="stylesheet" href="css/product-category-slider-style.css">
+    <link rel="stylesheet" href="css/tools-game-style.css">
+    <link rel="stylesheet" href="css/Quotation-style.css">
+    <!--     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- هدر-->
+    <header class="header-container">
+        <!--بخش اولی هدر -->
+        <div class="header-top">
+            <!--لوگو -->
+            <div class="logo">
+                <img src="\image\LOGO\logo.png" alt="لوگوی سایت" class="site-logo">
+            </div>
+            <nav class="menu">
+                <a href="#"><i class="fa-solid fa-house"></i> خانه </a>
+                <a href="#"><i class="fa-solid fa-list"></i> محصولات </a>
+                <a href="#"><i class="fa-solid fa-file"></i> درباره ما </a>
+                <a href="#"><i class="fa-solid fa-phone"></i> تماس با ما </a>
+            </nav>
+            <!-- زمان و تاریخ -->
+            <div class="datetime-box">
+                <div id="current-time"></div>
+                <div id="current-date"></div>
+            </div>
+        </div>
+        <!--بخش دوم هدر -->
+        <div class="header-bottom">
+            <div class="change-btn">
+                <button class="action-button">تغییر رنگ</button>
+                <p class="text-change-btn">اگه از رنگ هدر ها خوشت نمیاد دکمه رو که بزنی عوض میشن.</p>
+            </div>
+
+            <!--بخش جستجو-->
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" name="search-box" id="search-box-input" placeholder="جستجو...">
+                    <button class="search">جستجو</button>
+                </div>
+            </div>
+
+            <!--دکمه ها و پروفایل-->
+            <div class="user-action">
+                <span id="login-btn" class="login-btn">ورود به حساب کاربری</span>
+                <span class="usernameSpan" id="usernameSpan"></span>
+                <a href="../wishlist/index.html" class="icon">
+                    <i class="fa-solid fa-heart"></i>
+                    <span class="wishlist-badge">0</span>
+                </a>
+                <a href="http://127.0.0.1:8080/first-project/shopping-cart/" class="icon cart-icon" target="_blank">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-badge">0</span>
+                </a>
+
+                </a>
+                <a href="#" class="icon profile">
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!--بخش استوری-->
+    <section class="influencer-carousel">
+        <div class="carousel-container">
+            <h2 class="section-tittle"> شاید بتوانند به شما کمک کنند. </h2>
+            <div class="carousel-wrapper">
+                <button class="carousel-arrow left"> <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="carousel-track" id="carouselTrack">
+                    <a href="#" class="carousel-item">
+                        <div class="avatar-circle">
+                            <img src="\image\user\Amoled_1105.png" alt="کاربر اول">
+                        </div>
+                        <span class="item-tittle"> مهندس برق </span>
+                    </a>
+                    <a href="#" class="carousel-item">
+                        <div class="avatar-circle">
+                            <img src="\image\user\IMG_20200414_235213.jpg" alt="کاربر دوم  ">
+                        </div>
+                        <span class="item-tittle"> مهندس کامپیوتر </span>
+                    </a>
+                    <a href="#" class="carousel-item">
+                        <div class="avatar-circle">
+                            <img src="\image\user\MIUI_1092.jpeg" alt="کاربر  سوم ">
+                        </div>
+                        <span class="item-tittle"> مهندس طراحی و ساخت </span>
+                    </a>
+                    <a href="#" class="carousel-item">
+                        <div class="avatar-circle">
+                            <img src="\image\user\Earth & Moon_853.png" alt="کاربر  چهارم ">
+                        </div>
+                        <span class="item-tittle"> مهندس بازرگانی </span>
+                    </a>
+                    <a href="#" class="carousel-item">
+                        <div class="avatar-circle">
+                            <img src="\image\user\Astronaut_1138.jpeg" alt="کاربر  پنجم ">
+                        </div>
+                        <span class="item-tittle"> مهندس زبان </span>
+                    </a>
+                    <a href="#" class="carousel-item">
+                        <div class="avatar-circle">
+                            <img src="\image\user\PicsArt_06-07-10.37.18.jpg" alt="کاربر  ششم ">
+                        </div>
+                        <span class="item-tittle"> طراح سایت </span>
+                    </a>
+                    <a href="#" class="carousel-item">
+                        <div class="avatar-circle">
+                            <img src="\image\user\PicsArt_08-25-02.07.38.jpg" alt="کاربر  هفتم ">
+                        </div>
+                        <span class="item-tittle"> مهندس نرم افزار </span>
+                    </a>
+                    <a href="#" class="carousel-item">
+                        <div class="avatar-circle">
+                            <img src="\image\user\Picsart_22-08-22_23-10-53-864.jpg" alt="کاربر  هشتم ">
+                        </div>
+                        <span class="item-tittle"> مهندس برنامه نویس </span>
+                    </a>
+                    <a href="#" class="carousel-item">
+                        <div class="avatar-circle">
+                            <img src="\image\user\Picsart_23-04-04_01-53-37-710.jpg" alt="کاربر  نهم ">
+                        </div>
+                        <span class="item-tittle"> مهندس سخت افزار </span>
+                    </a>
+                    <a href="#" class="carousel-item">
+                        <div class="avatar-circle">
+                            <img src="\image\user\Picsart_23-07-21_18-05-52-106.jpg" alt="کاربر  دهم ">
+                        </div>
+                        <span class="item-tittle"> مهندس هوش مصنوعی </span>
+                    </a>
+                    <a href="#" class="carousel-item">
+                        <div class="avatar-circle">
+                            <img src="\image\user\Picsart_23-09-25_22-38-21-861.jpg" alt="کاربر   یازدهم ">
+                        </div>
+                        <span class="item-tittle"> طراح نرم افزار </span>
+                    </a>
+                    <a href="#" class="carousel-item">
+                        <div class="avatar-circle">
+                            <img src="\image\user\Picsart_23-10-21_01-06-16-893.jpg" alt="کاربر  دوازدهم ">
+                        </div>
+                        <span class="item-tittle"> ایده پرداز </span>
+                    </a>
+                    <a href="#" class="carousel-item">
+                        <div class="avatar-circle">
+                            <img src="\image\user\SAVE_20220717_234620.jpg" alt="کاربر  سیزدهم ">
+                        </div>
+                        <span class="item-tittle"> مشاور </span>
+                    </a>
+                    <a href="#" class="carousel-item">
+                        <div class="avatar-circle">
+                            <img src="\image\user\SAVE_20220717_234620.jpg" alt="کاربر  سیزدهم ">
+                        </div>
+                        <span class="item-tittle"> تایپیست </span>
+                    </a>
+                    <a href="#" class="carousel-item">
+                        <div class="avatar-circle">
+                            <img src="\image\user\Space Art_1088.jpeg" alt="کاربر  چهاردهم ">
+                        </div>
+                        <span class="item-tittle"> طراح کارت </span>
+                    </a>
+                    <a href="#" class="carousel-item">
+                        <div class="avatar-circle">
+                            <img src="\image\user\Picsart_22-08-22_23-10-53-864.jpg" alt="کاربر  پانزدهم ">
+                        </div>
+                        <span class="item-tittle"> کارشناس فروش </span>
+                    </a>
+                </div>
+                <button class="carousel-arrow right"><i class="fas fa-chevron-left"></i></button>
+            </div>
+        </div>
+    </section>
+    <!--بخش استوری-->
+
+    <!--بخش گرید محصولات تخفیف دارد -->
+    <section class="amazing-box">
+        <div class="amazing-header">
+            <h2>پیشنهاد شگفت انگیز</h2>
+            <a href="#" class="see-all">مشاهده همه </a>
+        </div>
+        <div class="product-grid"></div>
+
+    </section>
+
+
+
+    <!--بخش اسلایدر اصلی-->
+    <div class="image-silder-container">
+        <div class="slider-wrapper">
+            <!--تصاویر اسلایدر-->
+            <div class="slide active">
+                <img src="/image/main-slider-image/1.png" alt="تصویر 1">
+            </div>
+            <div class="slide active">
+                <img src="/image/main-slider-image/2.png" alt="تصویر 1">
+            </div>
+            <div class="slide active">
+                <img src="/image/main-slider-image/3.png" alt="تصویر 1">
+            </div>
+            <div class="slide active">
+                <img src="/image/main-slider-image/4.png" alt="تصویر 1">
+            </div>
+            <div class="slide active">
+                <img src="/image/main-slider-image/5.png" alt="تصویر 1">
+            </div>
+            <div class="slide active">
+                <img src="/image/main-slider-image/6.png" alt="تصویر 1">
+            </div>
+            <div class="slide active">
+                <img src="/image/main-slider-image/7.png" alt="تصویر 1">
+            </div>
+            <div class="slide active">
+                <img src="/image/main-slider-image/8.png" alt="تصویر 1">
+            </div>
+            <!--تصاویر اسلایدر-->
+        </div>
+        <!--دکمه های ناوبری اسلایدر-->
+        <button class="main-slider-nav prev" aria-label="10094#&"><i class="fas fa-chevron-left"></i></button>
+        <button class="main-slider-nav next" aria-label="10095#&"><i class="fas fa-chevron-right"></i></button>
+        <!--دکمه های ناوبری اسلایدر-->
+        <!--نقطه های نشانگر اسلایدر -->
+        <div class="main-slider-dots">
+            <span class="dot active" data-slide-index="0"></span>
+            <span class="dot" data-slide-index="1"></span>
+            <span class="dot" data-slide-index="2"></span>
+            <span class="dot" data-slide-index="3"></span>
+            <span class="dot" data-slide-index="4"></span>
+            <span class="dot" data-slide-index="5"></span>
+            <span class="dot" data-slide-index="6"></span>
+            <span class="dot" data-slide-index="7"></span>
+        </div>
+
+
+        <!--نقطه های نشانگر اسلایدر -->
+
+
+
+    </div>
+    <!--بخش اسلایدر اصلی-->
+
+    <!--بخش دسته بندی -->
+    <div class="category-carousel">
+        <h2 class="category-section-tittle">دسته بندی محصولات </h2>
+        <div class="category-carousel-container">
+            <div class="categoty-carousel-wraaper">
+                <div class="category-carousel-track">
+
+                    <!--آیتم ها -->
+                    <a href="#" class="category-carousel-item">
+                        <div class="category-circle">
+                            <img src="/image/category-image/case.png" alt="دسته بندی کیس ">
+                        </div>
+                        <span class="category-item-tittle">کامپیوتر</span>
+                    </a>
+
+                    <a href="#" class="category-carousel-item">
+                        <div class="category-circle">
+                            <img src="/image/category-image/laptop.png" alt="دسته بندی لپتاپ ">
+                        </div>
+                        <span class="category-item-tittle">لپتاپ</span>
+                    </a>
+
+                    <a href="#" class="category-carousel-item">
+                        <div class="category-circle">
+                            <img src="/image/category-image/monitor.png" alt="دسته بندی مانیتور ">
+                        </div>
+                        <span class="category-item-tittle">مانیتور</span>
+                    </a>
+
+                    <a href="#" class="category-carousel-item">
+                        <div class="category-circle">
+                            <img src="/image/category-image/mouse.png" alt="دسته بندی موس ">
+                        </div>
+                        <span class="category-item-tittle">موس</span>
+                    </a>
+
+                    <a href="#" class="category-carousel-item">
+                        <div class="category-circle">
+                            <img src="/image/category-image/keyboard.png" alt="دسته بندی کیبورد ">
+                        </div>
+                        <span class="category-item-tittle">کیبورد</span>
+                    </a>
+
+                    <a href="#" class="category-carousel-item">
+                        <div class="category-circle">
+                            <img src="/image/category-image/speaker.png" alt="دسته بندی اسپیکر ">
+                        </div>
+                        <span class="category-item-tittle">اسپیکر</span>
+                    </a>
+
+                    <a href="#" class="category-carousel-item">
+                        <div class="category-circle">
+                            <img src="/image/category-image/headphone.png" alt="دسته بندی هدفون ">
+                        </div>
+                        <span class="category-item-tittle">هدفون</span>
+                    </a>
+
+                    <a href="#" class="category-carousel-item">
+                        <div class="category-circle">
+                            <img src="/image/category-image/hard.png" alt="دسته بندی لوازم جانبی ">
+                        </div>
+                        <span class="category-item-tittle">لوازم جانبی</span>
+                    </a>
+
+                    <a href="#" class="category-carousel-item">
+                        <div class="category-circle">
+                            <img src="/image/category-image/pad.png" alt="دسته بندی لوازم جانبی لپتاپ ">
+                        </div>
+                        <span class="category-item-tittle">لوازم جانبی لپتاپ</span>
+                    </a>
+
+                    <a href="#" class="category-carousel-item">
+                        <div class="category-circle">
+                            <img src="/image/category-image/wifi.png" alt="دسته بندی شبکه ">
+                        </div>
+                        <span class="category-item-tittle">شبکه </span>
+                    </a>
+
+                    <a href="#" class="category-carousel-item">
+                        <div class="category-circle">
+                            <img src="/image/category-image/cable.png" alt="دسته بندی کابل ها ">
+                        </div>
+                        <span class="category-item-tittle">کابل ها</span>
+                    </a>
+                    <!--آیتم ها -->
+                    <!--تکرار آیتم ها -->
+                    <a href="#" class="category-carousel-item">
+                        <div class="category-circle">
+                            <img src="/image/category-image/case.png" alt="دسته بندی کیس ">
+                        </div>
+                        <span class="category-item-tittle">کامپیوتر</span>
+                    </a>
+
+                    <a href="#" class="category-carousel-item">
+                        <div class="category-circle">
+                            <img src="/image/category-image/laptop.png" alt="دسته بندی لپتاپ ">
+                        </div>
+                        <span class="category-item-tittle">لپتاپ</span>
+                    </a>
+
+                    <a href="#" class="category-carousel-item">
+                        <div class="category-circle">
+                            <img src="/image/category-image/monitor.png" alt="دسته بندی مانیتور ">
+                        </div>
+                        <span class="category-item-tittle">مانیتور</span>
+                    </a>
+
+                    <a href="#" class="category-carousel-item">
+                        <div class="category-circle">
+                            <img src="/image/category-image/mouse.png" alt="دسته بندی موس ">
+                        </div>
+                        <span class="category-item-tittle">موس</span>
+                    </a>
+
+                    <a href="#" class="category-carousel-item">
+                        <div class="category-circle">
+                            <img src="/image/category-image/keyboard.png" alt="دسته بندی کیبورد ">
+                        </div>
+                        <span class="category-item-tittle">کیبورد</span>
+                    </a>
+
+                    <a href="#" class="category-carousel-item">
+                        <div class="category-circle">
+                            <img src="/image/category-image/speaker.png" alt="دسته بندی اسپیکر ">
+                        </div>
+                        <span class="category-item-tittle">اسپیکر</span>
+                    </a>
+
+                    <a href="#" class="category-carousel-item">
+                        <div class="category-circle">
+                            <img src="/image/category-image/headphone.png" alt="دسته بندی هدفون ">
+                        </div>
+                        <span class="category-item-tittle">هدفون</span>
+                    </a>
+
+                    <a href="#" class="category-carousel-item">
+                        <div class="category-circle">
+                            <img src="/image/category-image/hard.png" alt="دسته بندی لوازم جانبی ">
+                        </div>
+                        <span class="category-item-tittle">لوازم جانبی</span>
+                    </a>
+
+                    <a href="#" class="category-carousel-item">
+                        <div class="category-circle">
+                            <img src="/image/category-image/pad.png" alt="دسته بندی لوازم جانبی لپتاپ ">
+                        </div>
+                        <span class="category-item-tittle">لوازم جانبی لپتاپ</span>
+                    </a>
+
+                    <a href="#" class="category-carousel-item">
+                        <div class="category-circle">
+                            <img src="/image/category-image/wifi.png" alt="دسته بندی شبکه ">
+                        </div>
+                        <span class="category-item-tittle">شبکه </span>
+                    </a>
+
+                    <a href="#" class="category-carousel-item">
+                        <div class="category-circle">
+                            <img src="/image/category-image/cable.png" alt="دسته بندی کابل ها ">
+                        </div>
+                        <span class="category-item-tittle">کابل ها</span>
+                    </a>
+                    <!--تکرار آیتم ها -->
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--گرید دسته بندی محصولات -->
+    <div id="categories-container"></div>
+    <!--گرید دسته بندی محصولات -->
+
+
+    <!--بخش ابزارها و سرگرمی-->
+    <div class="tools-game-container">
+        <div class="header-tools-game">
+            <h2 class="title-tools-game">بازی ها و سرگرمی ها</h2>
+            <p class="tools-game-mention">اینجا بازی ها و ابزارهایی است که می تواند به شما کمک کند و شاید از آنها
+                خوشتان بیایید</p>
+        </div>
+        <div class="tools-game-track">
+            <div id="todolist-link" class="tools-game-item">
+                <div class="tools-game-grid">
+                    <img src="/image/tools-game/todolist.jpg" alt="ToDoList">
+                </div>
+                <span class="tools-game-item-tittle">لیست انحام کار ها </span>
+            </div>
+            <div id="calculator-link" class="tools-game-item">
+                <div class="tools-game-grid">
+                    <img src="/image/tools-game/calculator.jpg" alt="Calculator">
+                </div>
+                <span id="calculator" class="tools-game-item-tittle"> ماشین حساب </span>
+            </div>
+            <div id="rock-paper-scissors-link" class="tools-game-item">
+                <div class="tools-game-grid">
+                    <img src="/image/tools-game/rock-paper.jpg" alt="rock paper scissors">
+                </div>
+                <span class="tools-game-item-tittle"> بازی سنگ ، کاغذ ، قیچی </span>
+            </div>
+            <div id="dice-game-link" class="tools-game-item">
+                <div class="tools-game-grid">
+                    <img src="/image/tools-game/dice-game.jpg" alt="DiceGame">
+                </div>
+                <span class="tools-game-item-tittle"> تاس بازی </span>
+            </div>
+        </div>
+    </div>
+    <!--بخش ابزارها و سرگرمی-->
+
+    <!--بخش ساهت نقل قول ها -->
+
+    <div class="quotation-container">
+        <div class="quotation-box">
+            <p class="header-quotation-box"> در اینجا متن ها و نقل قول هایی هست که شاید با خواندن آنها حالتان بهتر شود
+            </p>
+            <p class="quotation-box-p">یه روز خوب میاد </p>
+            <button class="quotation-change-btn">متن هارا تغییر بده </button>
+        </div>
+        <div class="random-quo-box">
+            <p class="random-quotation"></p>
+        </div>
+    </div>
+
+    <!--بخش ساهت نقل قول ها -->
+
+
+
+
+
+
+
+    <!-- فایل‌های معمولی -->
+    <script src="js/category-carousel.js"></script>
+    <script src="js/main-slider.js"></script>
+    <script src="js/Quotation.js"></script>
+
+    <!-- فایل‌هایی که از import استفاده می‌کنند -->
+    <script type="module" src="js/products.js"></script>
+    <script type="module" src="js/slider.js"></script>
+    <script type="module" src="js/script.js"></script>
+
+
+    <!--سبد خرید-->
+</body>
+
+</html>

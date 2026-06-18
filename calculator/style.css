@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('/fonts/vazir-font-v16.1.0/Vazir-Bold.woff2') format('.woff2');
+}
+
+body {
+    font-family: 'vazir';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #7f8fa6;
+}
+
+.calculator {
+    background-image: linear-gradient(to top, #273c75, #353b48);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 55px 54px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.display {
+    color: white;
+    width: 90%;
+    height: 50px;
+    font-size: 26px;
+    text-align: right;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    gap: 25px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 15px;
+
+}
+
+button {
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    background: #EEE;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 55px 54px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+button:hover {
+    background: #ddd;
+    color: #000;
+}
+
+.operator {
+    background-color: #f9c74f;
+}
+
+.equal {
+    background-color: #90be6d;
+    grid-column: span 2;
+}
+
+.clear {
+    background: #f94144;
+    color: white;
+}

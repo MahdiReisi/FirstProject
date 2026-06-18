@@ -1,0 +1,590 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('/fonts/vazir-font-v16.1.0/Vazir-Bold.woff2') format('.woff2');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(225, 224, 224, 0.675);
+    direction: rtl;
+}
+
+
+.header-container {
+    background-color: #186086;
+    border-radius: 0px 0px 45px 45px;
+}
+
+.header-top {
+    font-family: 'vazir';
+    height: 80px;
+    background-color: #236e96;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 25px;
+    color: #fff;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.site-logo {
+    width: 100px;
+    border: 2px solid;
+    border-radius: 10px;
+    border-image: linear-gradient(90deg, red, orange, yellow, green, blue) 1;
+    animation: borderMove 3s linear infinite;
+}
+
+@keyframes borderMove {
+    to {
+        border-image-source: linear-gradient(90deg, blue, indigo, violet, red, orange);
+    }
+}
+
+
+.menu a {
+    padding: 10px;
+    margin: 15px;
+    text-decoration: none;
+    color: #dcdde1;
+    font-family: 'vazir';
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+
+}
+
+.menu a:hover {
+    color: #fff;
+}
+
+.menu a:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #0A3431, #4A9B7F);
+}
+
+.datetime-box {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    width: 150px;
+    height: 70px;
+    font-family: 'vazir';
+}
+
+#current-time {
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    padding: 5px;
+    margin: 3px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #fff;
+}
+
+#current-date {
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    padding: 5px;
+    margin: 3px;
+    border-radius: 8px;
+    font-size: 10px;
+    color: #fff;
+}
+
+
+
+
+
+.header-bottom {
+    font-family: 'vazir';
+    background-color: #186086;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 25px;
+    height: 100px;
+    border-radius: 0px 0px 45px 45px;
+}
+
+.action-button {
+    background-color: #6683be;
+    color: #dadada;
+    border: #509D9B 1px solid;
+    padding: 8px 15px;
+    border-radius: 15px;
+    font-family: 'vazir';
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.header-bottom .text-change-btn {
+    background-color: #47dcbc;
+    padding: 8px 14px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 55px 54px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+
+.action-button:hover {
+    background: #509D9B;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.search-container {
+    display: flex;
+    text-align: center;
+}
+
+.search-box input {
+    background: linear-gradient(to right, #509D9B, #95F9C3);
+    color: #485460;
+    height: 30px;
+    width: 520px;
+    padding: 7px 10px;
+    font-family: 'vazir';
+    font-size: 14px;
+    border: 1px solid #09496b;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 55px 54px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.search-box button {
+    width: 70px;
+    height: 32px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(to left, #509D9B, #95F9C3);
+    color: #485460;
+    font-family: 'vazir';
+    font-size: 13px;
+    text-align: center;
+    align-items: center;
+
+}
+
+.search-box input::placeholder {
+    color: #485460;
+    font-family: 'vazir';
+    font-size: 16px;
+}
+
+.user-action {
+    float: left;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.login-btn {
+    padding: 5px;
+    background: linear-gradient(to right, #509D9B, #95F9C3);
+    font-family: 'vazir';
+    font-size: 14px;
+    border-radius: 10px;
+    color: #485460;
+    cursor: pointer;
+
+}
+
+.login-btn:hover {
+    background: linear-gradient(to right, #2b84a3, #3c5661);
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 55px 54px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.user-action .icon {
+    opacity: 0;
+    margin-right: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #424750;
+    font-size: 15px;
+    position: relative;
+    text-decoration: none;
+}
+
+.user-action i {
+    font-size: 25px;
+    margin-bottom: 5px;
+
+}
+
+.wishlist-badge {
+    text-decoration: none;
+    color: red;
+    top: -2px;
+    right: 25px;
+    position: absolute;
+    background: #ef4045;
+    color: white;
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-badge {
+    top: -2px;
+    right: 25px;
+    position: absolute;
+    background: #ef4045;
+    color: white;
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*پایان هدر */
+/*بخش استوری ها */
+.influencer-carousel {
+    direction: rtl;
+    font-family: 'vazir';
+    margin: 30px;
+    background-color: rgba(128, 128, 128, 0.2);
+    padding: 20px 0px;
+    border-radius: 25px;
+    margin-top: -2px;
+    border-bottom: 1px solid #e0e0e2;
+}
+
+.section-tittle {
+    font-size: 30px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    color: #424750;
+    text-align: right;
+    margin: 0 0 15px 15px;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 1400px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 40px;
+    justify-content: space-between;
+    padding: 15px 0;
+    direction: rtl;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    text-align: center;
+    text-decoration: none;
+    color: #424750;
+    min-width: 100px;
+}
+
+.avatar-circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #c2185b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item-tittle {
+    font-size: 12px;
+    font-family: 'vazir';
+    font-weight: 800;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100px;
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #e0e0e2;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 18px;
+    color: #757575;
+}
+
+.carousel-arrow.left {
+    right: -10px;
+}
+
+.carousel-arrow.right {
+    left: -10px;
+}
+
+.carousel-arrow:hover {
+    background: #ef4056;
+    color: white;
+    border-color: #ef4056;
+}
+
+/*بخش استوری ها */
+
+/*بخش گرید محصولات تخفیف دارد */
+.amazing-box {
+    font-family: 'vazir';
+    width: 95%;
+    margin: 30px auto;
+    background-image: linear-gradient(to left, #5684FF, #FF9983);
+    color: #ffffff;
+    padding-top: 20px;
+    border-radius: 20px;
+    position: relative;
+    /* برای قرار دادن دکمه‌های اسلایدر */
+}
+
+.amazing-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.amazing-header h2 {
+    font-size: 20px;
+    color: #e0e0e2;
+    padding: 15px;
+}
+
+.see-all {
+    font-size: 15px;
+    font-family: 'vazir';
+    color: #424750;
+    background-color: #47dcbc;
+    border-radius: 30px;
+    padding: 8px;
+    text-decoration: none;
+}
+
+/* تغییرات اصلی برای اسلایدر */
+.product-grid {
+    background-image: linear-gradient(to left, #5684FF, #FF9983);
+    display: flex;
+    /* تغییر از grid به flex */
+    gap: 15px;
+    /* grid-template-columns حذف می‌شود */
+    background-color: #fff;
+    padding: 15px;
+    overflow-x: auto;
+    /* اضافه کردن اسکرول افقی در صورت نیاز */
+    scroll-behavior: smooth;
+    /* اسکرول نرم */
+    -webkit-overflow-scrolling: touch;
+    /* برای اسکرول بهتر در iOS */
+}
+
+/* تنظیم عرض کارت‌ها */
+.product-card {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.2s;
+    flex: 0 0 auto;
+    /* باعث می‌شود کارت‌ها عرض خود را حفظ کنند و فشرده نشوند */
+    width: 170px;
+    /* عرض ثابت برای هر کارت (می‌تواند متغیر باشد) */
+    /* اگر می‌خواهید تعداد مشخصی کارت در هر بار نمایش داده شود، این عرض باید بر اساس درصد محاسبه شود */
+    /* مثلاً برای نمایش 3 کارت در هر بار: width: calc(100% / 3 - (15px * 2 / 3)); */
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 55px 54px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 10px;
+}
+
+.product-name {
+    font-size: 14px;
+    font-family: 'vazir';
+    color: #333;
+    height: 40px;
+    overflow: hidden;
+    line-height: 20px;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    align-items: center;
+}
+
+.discount {
+    background: #ff3c6c;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.final-price {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+    font-family: 'vazir';
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 12px;
+    margin-top: 4px;
+    display: block;
+}
+
+.add-btn {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    font-family: 'vazir';
+    padding: 3px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #3c6fb6;
+    border-radius: 30px;
+
+}
+
+.add-to-cart-btn {
+    cursor: pointer;
+    font-family: 'vazir';
+    font-size: 7px;
+    padding: 4px;
+    background-color: #273c75;
+    color: #fff;
+    border-radius: 30px;
+
+}
+
+.wishlist-btn {
+    cursor: pointer;
+    font-family: 'vazir';
+    font-size: 7px;
+    padding: 4px;
+    background-color: #273c75;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.shop-card-btn:hover {
+    background-color: #40739e;
+    border-radius: 45px;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.favourite-btn:hover {
+    background-color: #40739e;
+    border-radius: 45px;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* استایل برای دکمه‌های اسلایدر (اختیاری) */
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.slider-nav.prev {
+    left: 10px;
+}
+
+.slider-nav.next {
+    right: 10px;
+}
+
+/* استایل برای مخفی کردن اسکرول بار مرورگر (اختیاری) */
+.product-grid::-webkit-scrollbar {
+    display: none;
+}
+
+.product-grid {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+
+/*بخش گرید محصولات تخفیف دارد */

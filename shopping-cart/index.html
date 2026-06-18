@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سبد خرید</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="cart-header">
+            <h1>🛒 سبد خرید شما</h1>
+            <a href="../Firs-Page/index.html" class="back-btn">← بازگشت به فروشگاه</a>
+        </header>
+
+        <div class="cart-content">
+            <!-- بخش آیتم‌های سبد -->
+            <div class="cart-items-section">
+                <div id="cart-items">
+                    <!-- آیتم‌ها از JS اضافه می‌شوند -->
+                </div>
+
+                <div id="empty-cart" class="empty-cart" style="display: none;">
+                    <div class="empty-icon">🛒</div>
+                    <h3>سبد خرید شما خالی است</h3>
+                    <p>برای افزودن محصول به فروشگاه بروید</p>
+                    <a href="../Firs-Page/index.html" class="shop-now-btn">شروع خرید</a>
+                </div>
+            </div>
+
+            <!-- بخش خلاصه سبد -->
+            <div class="cart-summary">
+                <h3>خلاصه سبد خرید</h3>
+
+                <div class="summary-row">
+                    <span>تعداد کالاها:</span>
+                    <span id="items-count">0</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>جمع جزء:</span>
+                    <span id="subtotal">0 تومان</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>هزینه ارسال:</span>
+                    <span id="shipping">رایگان</span>
+                </div>
+
+                <div class="summary-divider"></div>
+
+                <div class="summary-row total">
+                    <span>مبلغ قابل پرداخت:</span>
+                    <span id="total-price">0 تومان</span>
+                </div>
+
+                <button class="checkout-btn">ادامه فرآیند خرید</button>
+                <button class="clear-cart-btn">پاک کردن سبد خرید</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="cart.js"></script>
+</body>
+
+</html>

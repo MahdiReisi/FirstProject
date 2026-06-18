@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('/fonts/vazir-font-v16.1.0/Vazir-Bold.woff2') format('.woff2');
+}
+
+.tools-game-container {
+    margin-top: 30px;
+    background-image: linear-gradient(to left, #5684ff, #ff9983);
+    font-family: 'vazir';
+    padding: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.header-tools-game {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.title-tools-game {
+    color: black;
+    font-size: 26;
+    font-family: 'vazir';
+    margin-bottom: 5px;
+}
+
+.tools-game-mention {
+    color: #303952;
+    font-size: 16px;
+}
+
+.tools-game-track {
+    justify-content: space-between;
+    display: flex;
+    gap: 20px;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 10px;
+}
+
+.tools-game-track a {
+    text-align: center;
+    text-decoration: none;
+    color: black inherit;
+}
+
+.tools-game-item {
+
+    flex: 0 0 auto;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    scroll-snap-align: start;
+    text-decoration: none;
+}
+
+.tools-game-item:hover {
+    transform: scale(1.05);
+}
+
+.tools-game-grid {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 55px 54px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.tools-game-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tools-game-item-tittle {
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: 'vazir';
+    color: inherit;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 5px 8px;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    text-align: center;
+    text-decoration: none;
+    color: black ;
+}

@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'vazir';
+  src: url('fonts/vazir-font-v16.1.0/Vazir-Light.woff2')format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+* {
+  direction: rtl;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: 'vazir' !important;
+  background: linear-gradient(to right, #4568dc, #b06ab3);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.generatorWrapper {
+  width: 350px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 55px 54px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.generatorWrapper h2 {
+  font-size: 28px;
+  text-align: center;
+}
+
+.generatorWrapper form {
+  display: flex;
+  flex-direction: row;
+  background-color: #8e60c0;
+  padding: 5px;
+  margin: 10px 0px 18px;
+  position: relative;
+}
+
+.generatorWrapper form input {
+  flex-grow: 2;
+  border: none;
+  font-family: 'vazir';
+  font-size: 18px;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.generatorWrapper form input :focus {
+  outline: none;
+}
+
+.generatorWrapper form button {
+  border: 1px solid #4568dc;
+  padding: 8px;
+  font-size: 18px;
+  background: #4568dc;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: 'vazir';
+}
+
+.selection-section.selection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0px;
+  font-size: 20px;
+}
+
+.selection-section.selection input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.btn-generate {
+  display: block;
+  width: 100%;
+  border: none;
+  color: #ffffff;
+  font-size: 22px;
+  padding: 12px;
+  background-color: #4568dc;
+  margin-top: 18px;
+  font-family: 'vazir';
+  cursor: pointer;
+  border-radius: 6px;
+}
+.generatorWrapper form .success-msg {
+  background-color: #47dcbc;
+  position: absolute;
+  bottom: -35px;
+  right: -140px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 55px 54px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    opacity: 0;
+    transition: all ease 0.5s;
+}

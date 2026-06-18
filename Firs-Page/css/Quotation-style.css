@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('/fonts/vazir-font-v16.1.0/Vazir-Bold.woff2') format('.woff2');
+}
+
+.quotation-container {
+    border-radius: 10px;
+    font-family: 'vazir';
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #145e78;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+    width: 100%;
+    height: 500px;
+    direction: rtl;
+}
+
+.quotation-box {
+    justify-content: space-between;
+    margin: 15px;
+    border-radius: 40px;
+    border: solid rgba(128, 128, 128, 0.500) 1px;
+    width: 65%;
+    height: 90%;
+    background-color: #c6dafc30;
+
+}
+
+.header-quotation-box {
+    margin: 0;
+    padding: 15px;
+    background-color: #bdc3c7d6;
+    color: #2c3e50;
+    border-radius: 35px;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.quotation-box-p {
+    background-color: #ffffff5c;
+    border-radius: 40px;
+    width: 50%;
+    border: solid #fff 1px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 55px 54px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    font-size: 18px;
+    padding: 10px;
+    margin-top: -20px;
+    text-align: center;
+    align-items: center;
+    color: #2c3e50;
+
+}
+
+.quotation-change-btn {
+    font-family: 'vazir';
+    background-color: #16a085;
+    color: #2c3e50;
+    font-size: 15px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.quotation-change-btn:hover {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+.random-quo-box {
+    justify-content: space-between;
+    margin: 15px;
+    border-radius: 40px;
+    border: solid rgba(128, 128, 128, 0.500) 1px;
+    width: 30%;
+    height: 90%;
+    background-color:#d2dae2;
+}
+
+.random-quotation {
+    background-color: #ffffff5c;
+    border-radius: 40px;
+    width: 95%;
+    border: solid #fff 1px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 55px 54px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    font-size: 18px;
+    padding: 25px;
+    margin: 8px;
+    text-align: center;
+    align-items: center;
+    color: #2c3e50;
+}

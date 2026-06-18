@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn Page | صفجه ثبت نام </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- احتمالاً اینجا هدر یا عنوان اصلی هست -->
+    <h1 class="h1">ثبت نام</h1>
+
+    <div class="container">
+        <header class="header">ایجاد حساب کاربری</header>
+        <!-- فرم ثبت نام اینجا قرار می‌گیره -->
+        <div class="registration-form-container">
+            <div class="form-row">
+                <div class="form-field">
+                    <label for="user">نام کاربری</label>
+                    <input type="text" id="user-name" name="firstName" maxlength="30"
+                        placeholder="نام کاربری خود را وارد کنید">
+                </div>
+
+            </div>
+
+            <div class="form-row">
+                <div class="form-field">
+                    <label for="phone">تلفن</label>
+                    <input type="tel" id="phone" name="phone" maxlength="11" placeholder="شماره تلفن خود را وارد کنید">
+                </div>
+                <div class="form-field">
+                    <label for="email">ایمیل</label>
+                    <input type="email" id="email" name="email" placeholder="آدرس ایمیل خود را وارد کنید">
+                </div>
+            </div>
+
+            <div class="form-row full-width">
+                <div class="form-field">
+                    <label for="address">آدرس</label>
+                    <input type="text" id="address" name="address" maxlength="200"
+                        placeholder="آدرس کامل خود را وارد کنید">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-field">
+                    <label for="password">رمز عبور</label>
+                    <input type="password" id="password" name="password" placeholder="رمز عبور خود را وارد کنید">
+                    <span id="toggle">👁️</span>
+                    <p class="status" id="status"></p>
+                </div>
+                <div class="form-field">
+                    <label for="password-repeat">تکرار رمز عبور</label>
+                    <input type="password" id="password-repeat" name="passwordRepeat" placeholder="تکرار رمز عبور">
+                    <p id="ckeckRepeat" class="ckeckRepeat"></p>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-field">
+                    <label for="avatar">تصویر آواتار</label>
+                    <input type="file" id="avatar" name="avatar" accept="image/*">
+                </div>
+                <!-- این قسمت را برای تکمیل گرید و فضای خالی گذاشتم -->
+                <div class="form-field">
+                    <!-- می‌توان برای نمایش آواتار اینجا کدی اضافه کرد -->
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="button" id="finish-button">اتمام</button>
+                <a href="file:///G:/Site/first-project/CreatePassword/index.html"><button type="button" class="button"
+                        id="generate-password-button">ساخت رمز</button></a>
+            </div>
+        </div>
+        <!-- پایان فرم ثبت نام -->
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
